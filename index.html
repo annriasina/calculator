@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title>title</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link href="css/select2.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="screen" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="calculator">
+				<div class="container">
+					<form class="calculator-form" action="#">
+						<fieldset>
+							<ul>
+								<li class="title">Вес изделия</li>
+								<li><input class="weight" type="text" placeholder="15 г"></li>
+								<li class="title">Проба металла</li>
+								<li class="select-style1">
+									<select class="select" name="state">
+										<option value="585 проба">585 проба</option>
+										<option value="585 проба">585 проба</option>
+									</select>
+								</li>
+								<li class="checkbox-content">
+									<input type="checkbox" class="checkbox" id="checkbox" />
+									<label for="checkbox">Камни и вставки
+										<span class="checkbox-value no">нет</span>
+										<span class="checkbox-value yes">да</span>
+										<span class="text">Окончательная оценочная стоимость залога может отличаться от указанной в расчете</span>
+									</label>
+								</li>
+								<li>
+									<span class="title">Тарифный план </span>
+									<div class="info"><span>i</span><p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p></div>
+								</li>
+								<li class="select-style2">
+									<select class="select" name="state">
+										<option value="Простой">«Простой»</option>
+										<option value="Простой">«Простой»</option>
+										<option value="Сложный">«Сложный»</option>
+									</select>
+								</li>
+								<li class="title">Ваш дисконтный статус</li>
+								<li class="select-style2">
+									<select class="select" name="state">
+										<option value="Без статуса">Без статуса</option>
+										<option value="Без статуса">Без статуса</option>
+									</select>
+								</li>
+								<li class="title">Срок кредитования до продления</li>
+								<li>
+									<div id="rangeslider"></div>
+								</li>
+							</ul>
+							<input type="submit" class="btn" value="Рассчитать кредит">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/nouislider.min.js"></script>
+		<script type="text/javascript" src="js/select2.min.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function() {
+                $('.select').select2();
+            });
+		</script>
+	</body>
+</html>

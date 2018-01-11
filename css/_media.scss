@@ -1,0 +1,21 @@
+@media (max-width: 500px) {
+  body .select2-container {
+    width: 145px !important;
+  }
+  .checkbox:not(checked) + label {
+    padding: 0;
+  }
+  .checkbox:not(checked) + label:before {
+    top: -35px;
+  }
+  .checkbox-value {
+    top: -32px;
+  }
+  .checkbox:not(checked) + label:after {
+    top: -32px;
+  }
+  .text {
+    top: -55px;
+    right: -142px;
+  }
+}
